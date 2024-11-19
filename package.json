@@ -1,15 +1,21 @@
 {
-  "name": "prompt-api-playground",
+  "name": "thinkmate",
   "version": "1.0.0",
-  "description": "This is a demo of Chrome's experimental Prompt API.",
+  "description": "ThinkMate: An AI-powered knowledge companion for summaries, rewrites, and debate prep.",
   "scripts": {
     "start": "npx http-server",
     "fix": "prettier --write ."
   },
-  "author": "Thomas Steiner (tomac@google.com)",
+  "author": "ThinkMate Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "dompurify": "^3.1.6",
     "http-server": "^14.1.1",
+    "marked": "^13.0.3",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "@splinetool/react-spline": "^4.0.0",
+    "express": "^4.18.2"
   }
 }
