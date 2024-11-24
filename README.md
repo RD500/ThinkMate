@@ -19,5 +19,5 @@ ThinkMate is an AI-powered web application designed to generate counter-argument
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/thinkmate.git
+   git clone https://github.com/RD500/ThinkMate.git
    cd thinkmate
