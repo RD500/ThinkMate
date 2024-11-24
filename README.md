@@ -110,3 +110,4 @@ If this fails, proceed with the following steps:
 ---
 
 By following the above steps, you can enable and confirm the availability of Gemini Nano and the Prompt API for your local setup.
+Now run the web application
