@@ -81,25 +81,32 @@ If this fails, proceed with the following steps:
 
 ---
 
-📣 **Force Chrome to recognize the API:**
+## 📣 Force Chrome to Recognize the API
 
 1. Open **DevTools** and run the following command:
    ```javascript
-   await ai.languageModel.create();```
-   
-   This will likely fail, but it's intended to trigger recognition.
+   await ai.languageModel.create();
+   ```
+   - This will likely fail, but it's intended to trigger recognition.
+
 2. Relaunch Chrome.
-3. Open a new tab in Chrome and navigate to: 
-   `chrome://components`
-4. Confirm that Gemini Nano is available or being downloaded:
 
-   Look for Optimization Guide On Device Model with a version greater than or equal to 2024.5.21.1031.
-   If no version is listed, click Check for update to force the download.
-5. Once the model has downloaded, run the following command in DevTools:
-   ```(await ai.languageModel.capabilities()).available;```
-   
-   If this returns "readily", then you are all set!
-   If not, relaunch Chrome, wait for a little while, and retry from step 1.
-By following the above steps, you can enable and confirm the availability of Gemini Nano and the Prompt API for your local setup
+3. Open a new tab in Chrome and navigate to:
+   ```
+   chrome://components
+   ```
 
+4. Confirm that **Gemini Nano** is available or being downloaded:
+   - Look for **Optimization Guide On Device Model** with a version greater than or equal to `2024.5.21.1031`.
+   - If no version is listed, click **Check for update** to force the download.
 
+5. Once the model has downloaded, run the following command in **DevTools**:
+   ```javascript
+   (await ai.languageModel.capabilities()).available;
+   ```
+   - If this returns `"readily"`, then you are all set!
+   - If not, relaunch Chrome, wait for a little while, and retry from step 1.
+
+---
+
+By following the above steps, you can enable and confirm the availability of Gemini Nano and the Prompt API for your local setup.
